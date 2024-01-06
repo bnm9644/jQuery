@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Document</title>
+    <style>
+        a {
+            display: inline-block;
+            color: #000;
+            text-decoration: none; /*밑줄 없애기*/
+            background-color: #ddd;
+            width: 100px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        div {
+            background: dodgerblue;
+            height: 200px;
+            margin-top: 10px;
+            width : 230px;
+            color: #fff;
+            text-align: center;
+            line-height: 200px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <a class="hide-btn" href="#none">감추기</a>
+    <a class="show-btn" href="#none">보이기</a>
+
+    <br><br><br>
+
+    <a class="slide-btn">슬라이드 감추기/보이기</a>
+
+    <div>Box</div>
+
+    <!-- ★ jQuery 작동시 라이브러리 파일 먼저 선언해야 작동가능 -->
+    <script src="script/jquery-1.12.4.js"></script>
+    <script src="script/custom2.js"></script>
+
+</body>
+</html>
