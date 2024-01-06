@@ -12,11 +12,11 @@ $('.hide-btn').click(function(){
 // 선택자 종류 - CSS 클래스/아이디/태그 선택자 , this
 // 함수 종류 - click(클릭) / mouseenter(마우스 커서 위) / mouseleave(마우스 커서 뗌) 
 /* 메서드 종류 - slideDown, slideUp, - 슬라이드로 내려가고 올라감
-                     stop, 
-                     show, hide, 
-                     fadeIn, fadeOut, 
-                     addClass, removeClass - class 넣고 뺌
-                     children, siblings - 선택자 탐색
+                stop, 
+                show, hide, 
+                fadeIn, fadeOut, 
+                addClass, removeClass - class 넣고 뺌
+                children, siblings - 선택자 탐색
 */                     
 
 
