@@ -24,7 +24,38 @@ $('.menu li').mouseleave(function(){
   $(this).children('.sub-menu').stop().slideUp(); 
 });
 
-//mouseleave 와 mouseenter의 합인 hover - test 해볼것
-$('.menu li').mouseleave(function(){
+//mouseleave 와 mouseenter의 합인 hover - test 해볼것, 
+$('.menu li').hover(function(){
   $(this).children('.sub-menu').stop().slideUp(); 
 });
+
+
+/*
+ hover - test 예시
+  <html>
+    <head>
+        <style>
+            .reverse{
+                background: Red;
+                color:Yellow;
+            }
+        </style>
+        <script src='https://code.jquery.com/jquery-3.3.1.js'></script>
+        <script>
+                $(document).ready(function(){
+                    //hover : 1. mouseenter,2. mouseleave
+                    $('h3').hover(function(){
+                        $(this).addClass('reverse');
+                    },function(){
+                        $(this).removeClass('reverse');
+                    });
+                });
+        </script>
+    </head>
+    <body>
+        <h3>header-0</h3>
+        <h3>header-1</h3>
+        <h3>header-2</h3>
+    </body>
+</html>
+*/
