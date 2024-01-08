@@ -26,7 +26,7 @@ $('.menu li').mouseleave(function(){
 
 
 /* 
-★ mouseleave 와 mouseenter의 합인 hover - hover (mouseenter시 콜백, mouseleave시 콜백)
+★ mouseleave 와 mouseenter의 합인 hover - hover(mouseenter시 콜백, mouseleave시 콜백)
   <html>
     <head>
         <style>
