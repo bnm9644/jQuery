@@ -24,10 +24,9 @@ $('.menu li').mouseleave(function(){
   $(this).children('.sub-menu').stop().slideUp(); 
 });
 
-//mouseleave 와 mouseenter의 합인 hover - test 해볼것!!
 
-/*
- hover - test 예시
+/* 
+★ mouseleave 와 mouseenter의 합인 hover - test 해볼것, 예시
   <html>
     <head>
         <style>
