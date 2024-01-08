@@ -1,4 +1,3 @@
-
 /*
   제이쿼리 필수 핵심이론 - 메서드 (탐색)
 
@@ -6,16 +5,21 @@
 
   siblings() - 선택요소의 형제요소 선택
 
-  stop() - 애니메이션 한번 실행시 전에 실행하던건 삭제하는 기능
+  stop() - 애니메이션 한번 실행시 전에 실행하던건 '삭제' 하는 기능 
+
 */
 
-//$('.menu li').mouseenter(function(){
-  //$('.sub-menu').slideDown();
-//});
+/*  
+    $('.menu li').mouseenter(function(){
+      $('.sub-menu').slideDown();
+    });
+*/
 
 $('.menu li').mouseenter(function(){
-  //$(this).slideDown(); 
-  //★ this: 위의 자기 자신, 현재는 .menu li가 된다.
+  /*
+    $(this).slideDown(); 
+    ★ this: 위의 자기 자신, 현재는 .menu li가 된다.
+  */
   $(this).children('.sub-menu').stop().slideDown(); 
   // 자식요소가 1개만 있으면 필요 없음.
 });
@@ -23,7 +27,6 @@ $('.menu li').mouseenter(function(){
 $('.menu li').mouseleave(function(){
   $(this).children('.sub-menu').stop().slideUp(); 
 });
-
 
 /* 
 ★ mouseleave 와 mouseenter의 합인 hover - hover(mouseenter시 콜백, mouseleave시 콜백)
