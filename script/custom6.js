@@ -1,6 +1,8 @@
 /*
   제이쿼리 필수 핵심이론 - 메서드 (탐색)
 
+  parents() - 선택요소의 바로 위 부모 태그를 선택
+
   children() - 선택요소의 바로 아래 단 개인 자식요소만 선택
 
   siblings() - 선택요소의 형제요소 선택
@@ -8,6 +10,15 @@
   find() - 선택요소의 자식요소 중 지정한 요소 '모두' 검색 하는 기능
   
   stop() - 애니메이션 한번 실행시 전에 실행하던건 '삭제' 하는 기능
+
+  ex)
+    $('.menu li').parents();              : li태그 바로 위의 부모 태그인 ul.menu, body, html 태그를 모두 검색
+    $('.menu li').parents('body');        : li태그 바로 위의 부모 태그인 ul.menu, body, html 中 body 태그를 검색 
+    $('.menu li').children();             : li태그 밑의 자식 태그인 a,div(sub-menu) 태그 두개를 모두 검색 
+    $('.menu li').children('a');          : li태그 밑의 자식 태그인 a를 모두 검색 
+    $('.menu li').siblings();             : 현재 선택자의 위치와 동일한 형제 태그를 모두 검색 
+    $('.menu li').children().find('div'); : li 태그 밑의 자식 태그들 중 div를 검색 
+    $('.menu li').children().find('*');   : li 태그 밑의 자식 태그들 모두 검색
 */
 
 /*  
