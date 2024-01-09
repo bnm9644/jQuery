@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 메서드</title>
+    <style>
+        .menu{
+            padding: 0;
+            list-style: none;
+            width: 200px;
+            border: 1px solid red;
+            text-align: center;
+        }
+        .menu li > a { /*.menu 밑의 li만 적용*/
+            background-color: #000;
+            color: #fff;
+            display: block;
+            text-align: center;
+            padding:5px;
+            border:1px solid #ddd;
+        }
+
+        .sub-menu {            
+            border:1px solid #000;
+            display: none;
+        }
+
+        .sub-menu a {
+            display: block;
+            padding: 5px;           
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 참고 -->
+    <!-- $('.menu li').parents();              : li태그 바로 위의 부모 태그인 ul.menu, body, html 태그를 모두 검색 -->
+    <!-- $('.menu li').parents('body');        : li태그 바로 위의 부모 태그인 ul.menu, body, html 中 body 태그를 검색 -->
+    <!-- $('.menu li').children();             : li태그 밑의 자식 태그인 a,div(sub-menu) 태그 두개를 모두 검색 -->
+    <!-- $('.menu li').siblings();             : 현재 선택자의 위치와 동일한 형제 태그를 모두 검색 --> 
+    <!-- $('.menu li').children().find('div'); : li 태그 밑의 자식 태그들 중 div를 검색 --> 
+    <!-- $('.menu li').children().find('*');   : li 태그 밑의 자식 태그들 모두 검색 -->
+    <!-- $('.menu li a').eq(2);                : li 태그의 자식인 a 태그의 세번째 위치 , SUB-MENU-3 -->
+    <!-- $('.menu li a').eq(0).remove();       : li 태그 자식 첫번째 a 태그 위치 삭제, SUB-MENU-1 -->
+    <!-- $('.menu li a').prepend('<a href="">SUB-MENU-1</a>');   : 선택한 요소 제일 앞에 추가, SUB-MENU-1 -->
+    <!-- $('.menu li a').append('<a href="">SUB-MENU-5</a>');    : 선택한 요소 제일 끝부분에 추가, SUB-MENU-5 -->  
+    <!-- $('<a href="">SUB-MENU-5</a>').appendTo('.menu li a');  : 동일한 내용 -->
+    <!-- $('.menu').wrap('<section class='sdf'>');  : 최상위 부모 menu 태그에, 클래스 값 sdf를 가진 section 태그를 감쌈 -->
+    
+    <ul class="menu">
+        <li>                
+            <a href="#none">MENU-1</a>    
+            <div class="sub-menu">
+                <a href="">SUB-MENU-1</a>
+                <a href="">SUB-MENU-2</a>
+                <a href="">SUB-MENU-3</a>
+                <a href="">SUB-MENU-4</a>
+                <div></div>
+            </div>    
+        </li>
+        <li>
+            <a href="#none">MENU-2</a>    
+            <div class="sub-menu">
+                <a href="">SUB-MENU-1</a>
+                <a href="">SUB-MENU-2</a>
+                <a href="">SUB-MENU-3</a>
+                <a href="">SUB-MENU-4</a>
+            </div>    
+        </li>
+    </ul>
+
+
+    <script src="script/jquery-1.12.4.js"></script>
+    <script src="script/custom6.js"></script>
+</body>
+</html>
